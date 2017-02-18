@@ -23,6 +23,11 @@ fList = [
 
 task "compile" => fList do
 end
+task "clean" => fList do
+end
+
+fList.each{|fn| CLEAN << fn }
+CLEAN << "xxcc"
 
 Rake::ExtensionTask.new "zdd_so" do |ext|
   ext.lib_dir = "lib/nysol"
