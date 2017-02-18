@@ -1,0 +1,14 @@
+追加修正ファイル
+print.cc : SAPPOROBDD/app/VSOP/print.ccをCoutだけでなくファイル出力もできるように変更
+vsop.h   : SAPPOROBDD/app/VSOP/vsop.hをPrint.ccのプロトタイプ宣言を変更。
+SAPPOROBDD/src/BDDLCM/lcm-vsop.org.sed：original sed file
+SAPPOROBDD/src/BDDLCM/lcm-vsop.sed：Mac&Linux 対応版sedファイル
+SAPPOROBDD/src/BDDLCM/lcm-vsop_add.cc：lcmub対応
+SAPPOROBDD/src/BDDLCM/makefile.org：original makefile
+SAPPOROBDD/src/BDDLCM/makefile：lcmub対応makefile
+
+SAPPOROBDD/src/BDD+/makefile：-fPIC追加
+SAPPOROBDD/src/BDDc/makefile：-fPIC追加
+SAPPOROBDD/src/BDDLCM/makefile：lcmub対応makefile&-fPIC追加
+SAPPOROBDD/src/BDDXc/makefile：-fPIC追加
+
