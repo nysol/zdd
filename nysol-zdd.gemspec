@@ -7,6 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = "3.0.0"
   spec.authors       = ["nysol"]
   spec.email         = ["info@nysol.jp"]
+  spec.platform      = Gem::Platform.local
 
   spec.summary       = %q{nysol zdd package}
   spec.description   = %q{nysol zdd package}
