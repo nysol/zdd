@@ -28,6 +28,9 @@ end
 
 fList.each{|fn| CLEAN << fn }
 CLEAN << "xxcc"
+CLEAN << "pkg"
+CLEAN << "lib/nysol/zdd_so.bundle"
+CLEAN << "lib/nysol/zdd_so.so"
 
 Rake::ExtensionTask.new "zdd_so" do |ext|
   ext.lib_dir = "lib/nysol"

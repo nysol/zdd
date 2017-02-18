@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "nysol-zdd"
-  spec.version       = "3.0.0"
+  spec.version       = "3.0.1"
   spec.authors       = ["nysol"]
   spec.email         = ["info@nysol.jp"]
   spec.platform      = Gem::Platform.local
