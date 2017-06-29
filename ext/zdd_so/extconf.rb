@@ -1,8 +1,8 @@
 require 'mkmf'
-cp = "$(srcdir)/ORG"
-$CFLAGS = " -O3 -Wall -I#{cp}/SAPPOROBDD/include -I#{cp}/SAPPOROBDD/src/BDDLCM -DB_STATIC -D_NO_MAIN_ -DLINE -fPIC -Wno-error=format-security"
-$CPPFLAGS = " -O3 -Wall -I#{cp}/SAPPOROBDD/include -I#{cp}/SAPPOROBDD/src/BDDLCM -DB_STATIC -D_NO_MAIN_ -DLINE -fPIC -Wno-error=format-security"
-$CXXFLAGS = " -O3 -Wall -I#{cp}/SAPPOROBDD/include -I#{cp}/SAPPOROBDD/src/BDDLCM -DB_STATIC -D_NO_MAIN_ -DLINE -fPIC -Wno-error=format-security"
+cp = "$(srcdir)"
+$CFLAGS = " -O3 -Wall -I. -I#{cp}/include -DB_STATIC -D_NO_MAIN_ -DLINE -fPIC -Wno-error=format-security"
+$CPPFLAGS = " -O3 -Wall -I. -I#{cp}/include  -DB_STATIC -D_NO_MAIN_ -DLINE -fPIC -Wno-error=format-security"
+$CXXFLAGS = " -O3 -Wall -I. -I#{cp}/include  -DB_STATIC -D_NO_MAIN_ -DLINE -fPIC -Wno-error=format-security"
 
 
 $LOCAL_LIBS += " -lstdc++"
@@ -21,5 +21,5 @@ if RUBY_VERSION < '1.9.0'
 end
 
 
-create_makefile("zdd_so")
+create_makefile("nysol/zdd_so")
 
