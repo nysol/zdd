@@ -9,9 +9,9 @@ $LOCAL_LIBS += " -lstdc++"
 
 if RUBY_VERSION >= '2.0.0' then
 	if Gem::Platform::local.os =~ /darwin/ then
-	$CFLAGS += " -Wno-error=unused-command-line-argument-hard-error-in-future"
-	$CPPFLAGS += " -Wno-error=unused-command-line-argument-hard-error-in-future"
-	$LOCAL_LIBS += " -Wno-error=unused-command-line-argument-hard-error-in-future"
+	$CFLAGS += " -Wno-error=unused-command-line-argument-hard-error-in-future -Wno-implicit-function-declaration -Wno-reserved-user-defined-litera"
+	$CPPFLAGS += " -Wno-error=unused-command-line-argument-hard-error-in-future -Wno-implicit-function-declaration -Wno-reserved-user-defined-litera"
+	$LOCAL_LIBS += " -Wno-error=unused-command-line-argument-hard-error-in-future -Wno-implicit-function-declaration -Wno-reserved-user-defined-litera"
 	end
 end
 
